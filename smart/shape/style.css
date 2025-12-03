@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Garamond', serif;
+}
+
+body{
+    background-color: #F5F2F0;
+    padding-bottom: 5vw;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.description{
+    padding-top: 10vw;
+    padding-bottom: 25vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.description h1{
+    font-size: 8vw;
+}
+
+.size{
+    padding-top: 5vw;
+}
+
+.element{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAE6E3;
+    border-radius: 3vw;
+    padding: 1.5vw 3vw 2vw 3vw;
+    margin-bottom: 2vw;
+}
+
+.element div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.element div:first-child img{
+    width: 7vw;
+}
+
+.element div:first-child h3{
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.element div:last-child{
+    display: flex;
+    align-items: center;
+    gap: 1.4vw;
+}
+
+.element div:last-child img{
+    width: 3.3vw;
+}
+
+.element div:last-child p{
+    color: gray;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.next{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 2vw 3vw 3vw 3vw;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 3.3vw;
+}
+
+.next p{
+    color: white;
+    font-size: 7vw;
+}
