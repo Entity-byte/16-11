@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Garamond', serif;
+    /* font-family: 'Garamond', serif; */
 }
 
 body{
@@ -10,7 +10,7 @@ body{
     padding-bottom: 5vw;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
     color: #000;

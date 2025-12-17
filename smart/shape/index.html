@@ -10,7 +10,7 @@
     <div class="description">
         <h1>Подберем капсулу под тебя</h1>
         <div class="size">
-            <div class="element">
+            <div class="element" id="height" onclick="heightpanelappear()">
                 <div>
                     <img src="./images/ruler.svg" alt="ruler">
                     <h3>Рост</h3>
@@ -42,6 +42,21 @@
             </div>
         </div>
     </div>
+    <div id="height-panel" class="editing">
+        <h2>Выбери Рост</h2>
+        <button onclick="heightpaneldisappear()" class="cancel-action"><img src="./images/cancel.svg" alt="cancel"></button>
+        <div class="size-scale">
+            <button class="cm-size">CM</button>
+            <button class="ftin-size">FT/IN</button>
+        </div>
+        <div class="editing-panel">
+            <button id="minus-arrow" onclick="sizeminus()" class="editing-arrow">-</button>
+            <p id="main-value" class="editing-value">173 cm</p>
+            <button id="plus-arrow" onclick="sizeplus()" class="editing-arrow">+</button>
+        </div>
+        <button class="editing-save">Сохранить</button>
+    </div>
     <a href="#" class="next"><p>Далее</p><p>&#8594;</p></a>
+    <script src="./script.js"></script>
 </body>
 </html>
