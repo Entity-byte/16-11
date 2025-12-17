@@ -88,6 +88,10 @@ h1, h2, h3, p {
     font-size: 7vw;
 }
 
+#height:hover{
+    cursor: pointer;
+}
+
 .editing{
     width: 100%;
     position: fixed;
@@ -104,8 +108,8 @@ h1, h2, h3, p {
 
 .cancel-action{
     position: fixed;
-    width: 5vw;
-    height: 5vw;
+    width: 6.7vw;
+    height: 6.7vw;
     right: 5vw;
     background-color: #E3DEDB;
     border-radius: 50%;
@@ -159,7 +163,7 @@ h1, h2, h3, p {
 }
 
 .editing-arrow{
-    font-size: 5vw;
+    font-size: 11vw;
     color: #7A7A7A;
     background-color: #F5F2F0;
     border: none;
