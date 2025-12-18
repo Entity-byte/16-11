@@ -111,9 +111,10 @@ function saveheight(){
     if (sizevalueswitch === 0){
         document.getElementById('height-saved').innerText = JSON.stringify(sizevaluesave) + " cm";
     }else{
-        document.getElementById('height-saved').innerText = JSON.stringify(ftinftvasave) + " ft " + JSON.stringify(ftininvasave) + " cm";
+        document.getElementById('height-saved').innerText = JSON.stringify(ftinftvasave) + " ft " + JSON.stringify(ftininvasave) + " in";
     }
     el.onanimationend = () => {
         el.style.display = 'none';
     };
+
 }
