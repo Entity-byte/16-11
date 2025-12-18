@@ -18,7 +18,7 @@ h1, h2, h3, p {
 
 .description{
     padding-top: 10vw;
-    padding-bottom: 25vw;
+    padding-bottom: 4vw;
     width: 90%;
     margin: 0 auto;
 }
@@ -72,6 +72,36 @@ h1, h2, h3, p {
     font-weight: 400;
 }
 
+.thickness-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 11vw;
+}
+
+.thickness-option div{
+    width: 30%;
+}
+
+.thickness-option div img{
+    width: 100%;
+}
+
+.thickness-option div p{
+    font-size: 4vw;
+    text-align: center;
+}
+
+.message-setting{
+    font-size: 3vw;
+    text-align: center;
+    color: #7A7A7A;
+    margin-bottom: 2vw;
+
+}
+
 .next{
     background-color: #AEB0AF4D;
     display: flex;
@@ -104,6 +134,32 @@ h1, h2, h3, p {
     display: none;
     align-items: center;
     flex-direction: column;
+    animation-name: panel-move;
+    animation-iteration-count: 1;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-fill-mode: none;
+}
+
+@keyframes panel-move{
+    0%{
+        bottom: -130vw;
+    }
+    
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes panel-away{
+    0%{
+        bottom: 0;
+    }
+    
+    100%{
+        bottom: -130vw;
+    }
 }
 
 .cancel-action{
@@ -163,7 +219,8 @@ h1, h2, h3, p {
 }
 
 .editing-arrow{
-    font-size: 11vw;
+    font-size: 14vw;
+    width: 60%;
     color: #7A7A7A;
     background-color: #F5F2F0;
     border: none;
@@ -172,6 +229,8 @@ h1, h2, h3, p {
 .editing-value{
     font-size: 5vw;
     font-weight: 150;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 .editing-save{
