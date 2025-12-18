@@ -35,3 +35,25 @@ function heightpaneldisappear(){
         el.style.display = 'none';
     };
 }
+
+function ftinsizeswitch(){
+    var el = document.getElementById('ftinsize');
+    var eltwo = document.getElementById('cmsize');
+    var elthree = document.getElementById('editingpanel');
+    var elfour = document.getElementById('editingpanelftin');
+    el.style.backgroundColor = '#E3DEDB';
+    eltwo.style.backgroundColor = 'white';
+    elthree.style.display = 'flex';
+    elfour.style.display = 'none';
+}
+
+function cmsizeswitch(){
+    var el = document.getElementById('ftinsize');
+    var eltwo = document.getElementById('cmsize');
+    var elthree = document.getElementById('editingpanel');
+    var elfour = document.getElementById('editingpanelftin');
+    el.style.backgroundColor = 'white';
+    eltwo.style.backgroundColor = '#E3DEDB';
+    elthree.style.display = 'none';
+    elfour.style.display = 'flex';
+}

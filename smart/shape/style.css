@@ -196,17 +196,16 @@ h1, h2, h3, p {
     width: 48%;
     height: 5vw;
     font-size: 2.3vw;
+    border-radius: 1vw;
+    border: none;
 }
 
 .cm-size{
     background-color: white;
-    border: none;
-    border-radius: 1vw;
 }
 
 .ftin-size{
     background-color: #E3DEDB;
-    border: none;
 }
 
 .editing-panel{
@@ -216,6 +215,46 @@ h1, h2, h3, p {
     align-items: center;
     margin-top: 2vw;
     margin-bottom: 2vw;
+}
+
+.editing-panel-ftin{
+    display: none;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ftinminus,
+.ftinplus{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.ftinminus button,
+.ftinplus button{
+    width: 100%;
+    background-color: #F5F2F0;
+    border: none;
+    font-size: 8vw;
+}
+
+#ftinpanel{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ftinpanel p{
+    width: 15%;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#a{
+    width: 15%;
 }
 
 .editing-arrow{

@@ -46,13 +46,29 @@
         <h2>Выбери Рост</h2>
         <button onclick="heightpaneldisappear()" class="cancel-action"><img src="./images/cancel.svg" alt="cancel"></button>
         <div class="size-scale">
-            <button class="cm-size">CM</button>
-            <button class="ftin-size">FT/IN</button>
+            <button onclick="ftinsizeswitch()" class="cm-size" id="cmsize">CM</button>
+            <button onclick="cmsizeswitch()" class="ftin-size" id="ftinsize">FT/IN</button>
         </div>
-        <div class="editing-panel">
+        <div id="editingpanel" class="editing-panel">
             <button id="minus-arrow" onclick="sizeminus()" class="editing-arrow">-</button>
             <p id="main-value" class="editing-value">173 cm</p>
             <button id="plus-arrow" onclick="sizeplus()" class="editing-arrow">+</button>
+        </div>
+        <div id="editingpanelftin" class="editing-panel-ftin">
+            <div class="ftinminus">
+                <button>-</button>
+                <button>-</button>
+            </div>
+            <div id="ftinpanel">
+                <p>5</p>
+                <p>ft</p>
+                <p>1</p>
+                <p>in</p>
+            </div>
+            <div class="ftinplus">
+                <button>+</button>
+                <button>+</button>
+            </div>
         </div>
         <button class="editing-save">Сохранить</button>
     </div>
