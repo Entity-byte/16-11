@@ -231,12 +231,15 @@ h1, h2, h3, p {
     display: flex;
     justify-content: space-between;
     width: 90%;
+    margin-top: 5.45vw;
+    margin-bottom: 5.45vw;
 }
 
 .ftinminus button,
 .ftinplus button{
     width: 100%;
     background-color: #F5F2F0;
+    color: #7A7A7A;
     border: none;
     font-size: 8vw;
 }
@@ -251,10 +254,6 @@ h1, h2, h3, p {
     width: 15%;
     font-size: 5vw;
     text-align: center;
-}
-
-#a{
-    width: 15%;
 }
 
 .editing-arrow{

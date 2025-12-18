@@ -16,7 +16,7 @@
                     <h3>Рост</h3>
                 </div>
                 <div>
-                    <p>выбери</p>
+                    <p id="height-saved">выбери</p>
                     <img src="./images/arrow.svg" alt="arrow">
                 </div>
             </div>
@@ -56,21 +56,21 @@
         </div>
         <div id="editingpanelftin" class="editing-panel-ftin">
             <div class="ftinminus">
-                <button>-</button>
-                <button>-</button>
+                <button onclick="ftinftminus()">-</button>
+                <button onclick="ftininminus()">-</button>
             </div>
             <div id="ftinpanel">
-                <p>5</p>
+                <p id="ftinft">5</p>
                 <p>ft</p>
-                <p>1</p>
+                <p id="ftinin">7</p>
                 <p>in</p>
             </div>
             <div class="ftinplus">
-                <button>+</button>
-                <button>+</button>
+                <button onclick="ftinftplus()">+</button>
+                <button onclick="ftininplus()">+</button>
             </div>
         </div>
-        <button class="editing-save">Сохранить</button>
+        <button onclick="saveheight()" class="editing-save">Сохранить</button>
     </div>
     <div class="thickness-option">
         <div>

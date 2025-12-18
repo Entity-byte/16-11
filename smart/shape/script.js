@@ -1,4 +1,5 @@
-var sizevalue = 173
+var sizevalue = 173;
+var sizevaluesave = 173;
 function sizeminus(){
     if (sizevalue > 100){
         sizevalue -= 1
@@ -29,8 +30,12 @@ function heightpaneldisappear(){
     var el = document.getElementById('height-panel');
     el.style.animationName = 'panel-away';
     el.style.animationFillMode = 'forwards';
-    sizevalue = 173
-    document.getElementById("main-value").innerText = "173 cm"
+    sizevalue = sizevaluesave;
+    ftinftva = ftinftvasave;
+    ftininva = ftininvasave;
+    document.getElementById('ftinft').innerText = JSON.stringify(ftinftva);
+    document.getElementById('ftinin').innerText = JSON.stringify(ftininva);
+    document.getElementById("main-value").innerText = JSON.stringify(sizevaluesave) + " cm";
     el.onanimationend = () => {
         el.style.display = 'none';
     };
@@ -45,6 +50,7 @@ function ftinsizeswitch(){
     eltwo.style.backgroundColor = 'white';
     elthree.style.display = 'flex';
     elfour.style.display = 'none';
+    sizevalueswitch = 0;
 }
 
 function cmsizeswitch(){
@@ -56,4 +62,58 @@ function cmsizeswitch(){
     eltwo.style.backgroundColor = '#E3DEDB';
     elthree.style.display = 'none';
     elfour.style.display = 'flex';
+    sizevalueswitch = 1;
+}
+
+var ftinftva = 5;
+var ftininva = 7;
+function ftinftminus(){
+    if (ftinftva > 1){
+        ftinftva --
+        document.getElementById('ftinft').innerText = JSON.stringify(ftinftva);
+    }
+}
+
+function ftinftplus(){
+    if (ftinftva < 10){
+        ftinftva ++
+        document.getElementById('ftinft').innerText = JSON.stringify(ftinftva);
+    }
+}
+
+function ftininminus(){
+    if (ftininva > 0){
+        ftininva --
+        document.getElementById('ftinin').innerText = JSON.stringify(ftininva);
+    }
+}
+
+function ftininplus(){
+    if (ftininva < 10){
+        ftininva ++
+        document.getElementById('ftinin').innerText = JSON.stringify(ftininva);
+    }
+}
+
+var ftinftvasave = 5;
+var ftininvasave = 7;
+var sizevalueswitch = 0;
+function saveheight(){
+    var el = document.getElementById('height-panel');
+    el.style.animationName = 'panel-away';
+    el.style.animationFillMode = 'forwards';
+    sizevaluesave = sizevalue;
+    ftinftvasave = ftinftva;
+    ftininvasave = ftininva;
+    document.getElementById('ftinft').innerText = JSON.stringify(ftinftva);
+    document.getElementById('ftinin').innerText = JSON.stringify(ftininva);
+    document.getElementById("main-value").innerText = JSON.stringify(sizevaluesave) + " cm";
+    if (sizevalueswitch === 0){
+        document.getElementById('height-saved').innerText = JSON.stringify(sizevaluesave) + " cm";
+    }else{
+        document.getElementById('height-saved').innerText = JSON.stringify(ftinftvasave) + " ft " + JSON.stringify(ftininvasave) + " cm";
+    }
+    el.onanimationend = () => {
+        el.style.display = 'none';
+    };
 }
